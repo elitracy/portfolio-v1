@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: Ubuntu;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+}
+
+.bg-image {
+  width: 100%;
+  height: auto;
+  z-index: -2;
+}
+
+.bg-image img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  -webkit-filter: blur(0.2rem);
+}
+
+nav {
+  width: 100%;
+  /* background-color: green; */
+  margin-bottom: 10rem;
+}
+
+.nav-bar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%;
+  display: flex;
+  margin: 2rem;
+  /* background-color: blue; */
+  height: 10vh;
+  justify-content: space-evenly;
+}
+
+.nav-links {
+  opacity: 0.8;
+  margin: auto 0;
+  font-size: 4rem;
+}
+a {
+  transition: ease-in-out 0.25s;
+}
+
+a:hover {
+  color: rgb(255, 131, 131);
+  transition: ease-in-out 0.25s;
+}
+
+.projects {
+  height: 70vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: col; */
+  position: absolute;
+  top: 15vh;
+  left: 5%;
+  /* background-color: blue; */
+  align-items: center;
+  justify-content: center;
+  /* margin: auto 0; */
+}
+
+.project {
+  width: 100%;
+  height: 60%;
+  border-bottom: 1px solid rgba(103, 103, 103, 0.399);
+  background-color: rgba(255, 255, 255, 0.31);
+  mask-composite: exclude;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  transition: ease-in-out 0.2s;
+  /* margin: 0.5rem auto; */
+  /* transition: width ease-in-out 1s; */
+}
+
+.project h3 {
+  font-size: 3rem;
+  /* margin: 1rem auto; */
+}
+
+.project p {
+  width: 80%;
+  font-size: 1.5rem;
+  margin: 0rem auto;
+}
+
+.project:hover {
+  transform: scale(0.95);
+  border-radius: 2rem;
+  transition: ease-in-out 0.2s;
+
+  /* transition: width ease-in-out 1s; */
+}
+
+#bottom-project {
+  border-radius: 0rem 0rem 2rem 2rem;
+  transition: border-radius scale ease-in-out 0.2s;
+}
+
+#top-project {
+  border-radius: 2rem 2rem 0rem 0rem;
+  transition: border-radius scale ease-in-out 0.2s;
+}
+
+#top-project:hover,
+#bottom-project:hover {
+  border-radius: 2rem;
+  transition: border-radius scale sease-in-out 0.2s;
+}
+
+.github-logo {
+  position: absolute;
+  top: 50vh;
+  right: 5%;
+  transform: translate(0%, -50%);
+  width: 200px;
+  height: 200px;
+  /* background: blue; */
+}
+
+.github-logo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  -webkit-filter: invert();
+}
+
+.github-logo img:hover {
+  -webkit-filter: none;
+
+  transition: ease-in-out 0.35s;
+}
